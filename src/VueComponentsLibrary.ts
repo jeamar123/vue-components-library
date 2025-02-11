@@ -1,9 +1,10 @@
-import MyButton from './components/Button.vue'
+import Button from '@/components/common/Button.vue'
+import "./style.css";
 
 export default {
   install: (app: any) => {
-    app.component('b-upload-files-modal', MyButton)
+    app.component('Button', Button)
   },
 }
 
-export { MyButton }
+export { Button }

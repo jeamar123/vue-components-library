@@ -2,6 +2,7 @@ import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import typescript2 from 'rollup-plugin-typescript2'
 import dts from "vite-plugin-dts"
+import { fileURLToPath, URL } from 'node:url'
 
 export default defineConfig({
   plugins: [
@@ -25,7 +26,7 @@ export default defineConfig({
           declarationMap: true,
         },
       },
-      exclude: ['vite.config.ts', 'main.ts'],
+      exclude: ['vite.config.ts', 'main.ts', 'src/router/*.ts',],
     }),
   ],
   build: {
@@ -34,16 +35,22 @@ export default defineConfig({
       entry: './src/VueComponentsLibrary.ts',
       name: 'VueComponentsLibrary',
       formats: ["es", "cjs", "umd"],
-      fileName: (format) => `VueComponentsLibrary.${format}.js`,
+      fileName: (format) => `index.${format}.js`,
     },
     rollupOptions: {
       external: ['vue'],
       output: {
-        exports: 'named',
+        assetFileNames: 'style.css',
+        exports: "named",
         globals: {
           Vue: 'Vue',
         },
       },
+    },
+  },
+  resolve: {
+    alias: {
+      '@': fileURLToPath(new URL('./src', import.meta.url)),
     },
   },
 })

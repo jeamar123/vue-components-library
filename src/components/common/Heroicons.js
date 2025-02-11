@@ -1,0 +1,58 @@
+import {
+  HomeIcon,
+  UserIcon,
+  UserCircleIcon,
+  EnvelopeIcon,
+  PhoneArrowDownLeftIcon,
+  CalendarDaysIcon,
+  CalendarIcon,
+  UserPlusIcon,
+  TrashIcon,
+} from '@heroicons/vue/20/solid'
+
+import {
+  PencilSquareIcon as PencilSquareIconOutline,
+  PhotoIcon as PhotoIconOutline,
+  Bars3Icon as Bars3IconOutline,
+  XMarkIcon as XMarkIconOutline,
+  UserIcon as UserIconOutline,
+  UserCircleIcon as UserCircleIconOutline,
+  EnvelopeIcon as EnvelopeIconOutline,
+  PhoneIcon as PhoneIconOutline,
+  CalendarDaysIcon as CalendarDaysIconOutline,
+  UserPlusIcon as UserPlusIconOutline,
+  MagnifyingGlassIcon as MagnifyingGlassIconOutline,
+  EyeIcon as EyeIconOutline,
+  TrashIcon as TrashIconOutline,
+  Cog6ToothIcon as Cog6ToothIconOutline,
+  Cog8ToothIcon as Cog8ToothIconOutline,
+} from '@heroicons/vue/24/outline'
+
+const Icon = {
+  HomeIcon,
+  PencilSquareIconOutline,
+  PhotoIconOutline,
+  Bars3IconOutline,
+  XMarkIconOutline,
+  UserIcon,
+  UserIconOutline,
+  UserCircleIcon,
+  UserCircleIconOutline,
+  EnvelopeIconOutline,
+  PhoneIconOutline,
+  EnvelopeIcon,
+  PhoneArrowDownLeftIcon,
+  CalendarDaysIcon,
+  CalendarDaysIconOutline,
+  CalendarIcon,
+  UserPlusIcon,
+  UserPlusIconOutline,
+  MagnifyingGlassIconOutline,
+  EyeIconOutline,
+  TrashIcon,
+  TrashIconOutline,
+  Cog6ToothIconOutline,
+  Cog8ToothIconOutline,
+}
+
+export default Icon

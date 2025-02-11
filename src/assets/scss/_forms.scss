@@ -1,0 +1,51 @@
+.form {
+  &-control {
+    @apply border border-slate-200
+      block
+      rounded
+      p-2
+      outline-none
+      text-sm
+      read-only:border-slate-200
+      read-only:text-gray-500
+      read-only:cursor-not-allowed
+      autofill:!bg-white
+      transition-all;
+
+    &-focus {
+      @apply focus:border-slate-400;
+    }
+    &-error {
+      @apply border-red-500;
+    }
+  }
+
+  &-select {
+    @apply border border-slate-200
+      block
+      rounded
+      p-2
+      outline-none
+      text-sm
+      transition-all;
+
+    &-focus {
+      @apply focus:border-slate-400;
+    }
+    &-error {
+      @apply border-red-500;
+    }
+  }
+}
+
+/* Chrome, Safari, Edge, Opera */
+input.no-arrows::-webkit-outer-spin-button,
+input.no-arrows::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type='number'].no-arrows {
+  -moz-appearance: textfield;
+}

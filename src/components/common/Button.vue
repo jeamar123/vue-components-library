@@ -1,7 +1,7 @@
 
 
 <template>
-  <button :class="[getClasses]" :disabled="disabled">
+  <button class="btn" :class="[getClasses]" :disabled="disabled">
     <slot />
   </button>
 </template>
@@ -49,36 +49,6 @@ const getClasses = computed(() => {
 })
 </script>
 
-<style scoped>
-.btn {
-  white-space: nowrap;
-  border-radius: 0.375rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-  font-weight: 600;
-  -webkit-font-smoothing: antialiased;
-  border: 1px solid transparent;
-}
+<style>
 
-.btn:disabled {
-  @apply opacity-50 pointer-events-none;
-}
-
-.btn-primary {
-  @apply bg-primary text-white hover:bg-[#6366f1];
-}
-
-.btn-secondary {
-  @apply bg-secondary text-[#4f46e5] hover:bg-[#e0e7ff];
-}
-
-.btn-outline {
-  @apply bg-white text-primary border-primary hover:opacity-80;
-}
-
-.btn-default {
-  @apply bg-white text-[#4b5563] border-[#d1d5db] hover:bg-[#f9fafb];
-}
 </style>

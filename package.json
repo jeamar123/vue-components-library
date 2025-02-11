@@ -2,7 +2,7 @@
   "name": "@jeamar1234/vue-components-library",
   "description": "Library for vue reusable components that can be used with projects",
   "private": false,
-  "version": "0.0.1",
+  "version": "1.0.2",
   "author": {
     "name": "Jeamar Libres",
     "email": "jeamar1234@gmail.com"
@@ -11,22 +11,22 @@
     "type": "git",
     "URL": "https://github.com/jeamar123/vue-components-library.git"
   },
-  "main": "./dist/VueComponentsLibrary.cjs.js",
-  "module": "./dist/VueComponentsLibrary.es.js",
+  "main": "./dist/index.cjs.js",
+  "module": "./dist/index.es.js",
   "files": [
     "dist/"
   ],
   "exports": {
     ".": {
-      "import": "./dist/VueComponentsLibrary.cjs.js",
-      "require": "./dist/VueComponentsLibrary.es.js."
+      "import": "./dist/index.cjs.js",
+      "require": "./dist/index.es.js."
     },
     "./style.css": "./dist/style.css"
   },
   "browser": {
-    ".": "./dist/VueComponentsLibrary.es.js"
+    ".": "./dist/index.es.js"
   },
-  "types": "./dist/VueComponentsLibrary.d.ts",
+  "types": "./dist/index.d.ts",
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc -b && vite build",
@@ -36,12 +36,23 @@
     "vue": "^3.5.13"
   },
   "devDependencies": {
+    "@headlessui/vue": "^1.7.23",
+    "@heroicons/vue": "^2.2.0",
+    "@types/node": "^22.13.1",
     "@vitejs/plugin-vue": "^5.2.1",
     "@vue/tsconfig": "^0.7.0",
+    "@vuepic/vue-datepicker": "^11.0.1",
+    "@wdns/vue-code-block": "^2.3.5",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.5.1",
     "rollup-plugin-typescript2": "^0.36.0",
+    "tailwindcss": "^3.4.17",
     "typescript": "~5.7.2",
     "vite": "^6.1.0",
+    "vite-plugin-css-injected-by-js": "^3.5.2",
     "vite-plugin-dts": "^4.5.0",
-    "vue-tsc": "^2.2.0"
+    "vue-router": "4",
+    "vue-tsc": "^2.2.0",
+    "vue3-colorpicker": "^2.3.0"
   }
 }

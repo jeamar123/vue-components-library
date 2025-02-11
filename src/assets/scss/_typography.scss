@@ -1,0 +1,41 @@
+h1 {
+  @apply font-bold;
+  font-size: 32px;
+  line-height: normal;
+  color: #111827;
+}
+
+h2 {
+  @apply font-bold;
+  font-size: 28px;
+  line-height: normal;
+  color: #111827;
+}
+
+h3 {
+  @apply font-semibold;
+  font-size: 24px;
+  line-height: normal;
+  color: #111827;
+}
+
+h4 {
+  @apply font-semibold;
+  font-size: 20px;
+  line-height: normal;
+  color: #111827;
+}
+
+p {
+  font-size: 14px;
+  line-height: normal;
+}
+
+a {
+  font-size: 14px;
+  line-height: normal;
+}
+
+strong {
+  @apply font-bold;
+}
