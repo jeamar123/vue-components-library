@@ -9,6 +9,7 @@ export default defineConfig({
     vue(),
     dts({
       insertTypesEntry: true,
+      outDir: 'dist/types'
     }),
     typescript2({
       check: false,
@@ -32,7 +33,7 @@ export default defineConfig({
   build: {
     cssCodeSplit: false,
     lib: {
-      entry: './src/VueComponentsLibrary.ts',
+      entry: './src/index.ts',
       name: 'VueComponentsLibrary',
       formats: ["es", "cjs", "umd"],
       fileName: (format) => `index.${format}.js`,

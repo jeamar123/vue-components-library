@@ -1,7 +1,7 @@
 
 
 <template>
-  <button class="btn" :class="[getClasses]" :disabled="disabled">
+  <button class="btn" :class="[getClasses]" :disabled="disabled" :style="configStyles">
     <slot />
   </button>
 </template>
@@ -18,6 +18,8 @@ const props = withDefaults(defineProps<Props>(), {
   variant: 'primary' , // primary, secondary
   disabled: false
 })
+
+// Inject the configuration
 
 const getClasses = computed(() => {
   let defaultClasses = 'btn'
@@ -47,6 +49,9 @@ const getClasses = computed(() => {
 
   return `${defaultClasses} ${classes}`
 })
+
+const configStyles = computed(() => ({
+}))
 </script>
 
 <style>
